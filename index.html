@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1><span class="x">X</span> Tic Tac Toe <span class="o">O</span></h1>
+    <p>Play a friend, or take on the computer.</p>
+  </header>
+
+  <div class="panel">
+
+    <div class="controls">
+      <div class="toggle-group" id="modeGroup">
+        <button class="toggle-btn active" data-mode="pvp">2 Player</button>
+        <button class="toggle-btn" data-mode="pvc">Vs Computer</button>
+      </div>
+      <div class="toggle-group" id="difficultyGroup">
+        <button class="toggle-btn" data-difficulty="easy">Easy</button>
+        <button class="toggle-btn active" data-difficulty="hard">Unbeatable</button>
+      </div>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="board" id="board"></div>
+
+    <div class="scoreboard">
+      <div class="score-card x">
+        <div class="label">Player X</div>
+        <div class="value" id="scoreX">0</div>
+      </div>
+      <div class="score-card">
+        <div class="label">Draws</div>
+        <div class="value" id="scoreDraw">0</div>
+      </div>
+      <div class="score-card o">
+        <div class="label" id="scoreOLabel">Player O</div>
+        <div class="value" id="scoreO">0</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="newRoundBtn">New Round</button>
+      <button id="resetScoresBtn">Reset Scores</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
